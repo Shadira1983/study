@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body{
+    font-family: "Inter", sans-serif;
+}
+
+header{
+    max-width: 1500px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    text-decoration: none;
+    padding: 70px 60px;
+    
+}
+
+header nav a, .logo{
+   text-decoration: none;
+   color: black;
+   padding: 5px 10px;
+}
+
+.logo{
+    font-size: 22px;
+    color: blue;
+    font-weight: 900;
+}
+
+.lang{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.book-btn, .hero button, .events button, .contact-us button{
+    background: blue;
+    color: white;
+    padding: 5px 40px;
+    border: none;
+    cursor: pointer;
+}
+
+.hero-search, .hero select, .hero h4{
+    display: flex;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+}
+
+.hero{
+    height: 981px;
+    background: url(../images/hero.png);
+    display: flex;
+   
+   background-size: cover;
+   align-items: end;
+   justify-content: center;
+   padding-bottom: 140px;
+}
+
+.hero-search{
+    height: 80px;
+}
+
+main h2{
+    display: flex;
+    padding-bottom: 20px;
+    justify-content: center;
+    color: rgb(127, 127, 127);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.about {
+    padding: 60px 120px;
+    text-align: center;
+}
+
+/*.event-cards{
+    display: flex;
+    justify-content: center;
+    padding: 0px 100px;
+   
+}*/
+
+.event-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1300px;
+    margin: 0 auto;
+    gap: 20px;
+    padding: 30px;
+}
+
+.event-card img{
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+}
+
+.event-card{
+    position: relative;
+}
+
+.event-card-date{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.event-card-number{
+    font-size: 40px;
+}
+
+
+.events h4{
+    text-align: center;
+    padding: 20px 10px 5px;
+}
+
+.events p{
+    text-align: center;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+.events{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-events{
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    padding: 30px 30px;
+}
+
+.burger-menu-btn{
+    background: none;
+    border: none;
+    display: none;
+}
+
+footer h1{
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+footer{
+
+    background: darkblue;
+    margin: 40px 0px;
+    color: white;
+    padding: 60px 300px;
+}
+
+footer a{
+text-decoration: none;
+color: white;
+}
+
+.list{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 200;
+    gap: 150px;
+    line-height: 150%;
+}
+
+.list h3{
+    font-size: 25px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.social-media{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.footer-low a{
+    font-size: 14px;
+    font-weight: 200;
+    gap: 40px;
+}
+
+.footer-low p{
+   color: gray;
+   font-size: 14px;
+   padding: 10px 0px;
+}
+
+.contact-us{
+    max-width: 940px;
+    margin: 100px auto;
+    padding: 30px;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.contact-form-fields{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 60px;
+    margin-top: 80px;
+}
+
+.contact-form-fields input{
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 10px 0px;
+    outline: none;
+}
+
+.contact-form textarea{
+    resize: none;
+    height: 100px;
+    border: 1px solid black;
+    outline: none;
+}
+
+.contact-form button{
+    width: 235px;
+    display: block;
+    margin: 0 auto;
+    font-size: 30px;
+    padding: 5px 30px;
+}
+
+@media screen and (max-width:  550px){
+.list, .social-media, .footer-low{
+    display: none;
+}
+.footer h1{
+    font-size: 32px;
+}
+}
+
+@media screen and (max-width:  992px){
+.burger-menu-btn{
+    display: block;
+}  
+   nav{
+    display: none;
+   } 
+
+   .event-cards{
+   grid-template-columns: repeat(1, 1fr); 
+
+   .event-card img{
+     height: 60vw;
+   }
+}
+}
+
+
+@media screen and (max-width:  768px){
+.hero-search{
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}  
+   .hero-hotel, .hero-arrival, .hero-departure, .hero button{
+    width: max(70%, 300px);
+   }
+
+   .contact-form-fields{
+    grid-template-columns: repeat(1, 1fr); 
+    gap: 30px;
+    margin-top: 40px;    
+   }
+
+   .contact-form{
+    gap: 30px;
+   }
+   
+}
+
+@media screen and (max-width:  450px){
+  header{
+    padding: 30px;
+  }
+
+  .logo{
+    font-size: 20px;
+  }
+
+  h2{
+    font-size: 20px;
+  }
+
+  .about p{
+    font-size: 14px;
+  }
+
+  .event-card-date{
+    width: 80px;
+    height: 80px;
+    font-size: 16px;
+  }
+
+  .event-card-number, .event-card-month{
+    font-size: 18px;
+  }
+
+}
