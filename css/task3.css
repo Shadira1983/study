@@ -1,123 +1,127 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-*{
-box-sizing: border-box;
+
+
+* {
+    box-sizing: border-box;
 }
 
-body{
+body {
     font-family: "Inter", sans-serif;
     max-width: 1440px;
     margin: 0 auto;
     padding: 56px 80px;
 }
 
-header{
-display: flex;
-justify-content: space-between;
-align-items: center;
-background: white;
-width: 100%;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.logo, header nav a, .hero-product-about, 
+.logo,
+header nav a,
+.hero-product-about,
 .hero-product-additional-details,
-.product-card figcaption{
-color: black;
-text-decoration: none;
-font-weight: 500;
-font-size: 20px;
-line-height: 150%;
+.product-card figcaption {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
 }
 
-header nav{
-display: flex;
-gap: 48px; 
-align-items: center;   
+header nav {
+    display: flex;
+    gap: 48px;
+    align-items: center;
 }
 
-.btn, .hero-product-description button{
-gap: 10px;
-background: black;
-color: white;
-width: 99px;
-height: 52px;
-border: none;
-padding: 8px;
-border-radius: 8px;
-cursor: pointer;
-font-size: 16px;
-font-weight: 500;
+header button,
+.hero-product-description button {
+    background: black;
+    color: white;
+    width: 99px;
+    height: 52px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .hero-product {
     margin: 56px 0px 80px;
     display: flex;
-    justify-content: space-between; 
-    
+    justify-content: space-between;
+
 }
 
-.hero-product-description{
+.hero-product-description {
     display: flex;
     flex-direction: column;
     gap: 24px;
     max-width: 515px;
 }
 
-h1{
+h1 {
     font-size: 40px;
     font-weight: 600;
     line-height: 110%;
 }
 
-.hero-product-description h2, 
-.hero-product-price
-.products h2
-.footer-info h2{    
-    font-family: 24px;
+.hero-product-description h2,
+.hero-product-price,
+.products h2,
+.footer-info h2 {
+    font-size: 24px;
     line-height: 150%;
 }
 
-.hero-product-description h2, 
+.hero-product-description h2,
 .hero-product-about,
 .hero-product-additional-details,
 .product-card-about {
-    color: grey;
+    color: #828282;
 }
 
-.hero-product-description button{
-        width: unset;
+.hero-product-description button {
+    width: unset;
 }
 
-.hero-product-additional-details{
+.hero-product-additional-details {
     font-size: 16px;
 }
 
-.product-cards{
-    margin:24px 0px 120px;
+.product-cards {
+    margin: 24px 0px 120px;
     display: flex;
     gap: 32px;
 }
 
-.product-card{
-   flex: auto;
+.product-card {
+    flex: auto;
 }
 
-.product-card figcaption{
+.product-card figcaption {
     margin-top: 24px;
+
 }
 
-footer{
+
+footer {
     display: flex;
     justify-content: space-between;
-    border-top: 1px solid #e6e6e6;
+    border-top: 1px solid #E6E6E6;
     padding-top: 48px;
 }
 
-.footer-links{
+
+.footer-links {
     display: flex;
     gap: 32px;
 }
 
-.footer-links-list{
+.footer-links-list {
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -125,20 +129,21 @@ footer{
 }
 
 .footer-links-list a,
-.footer-links h3{
+.footer-links h3 {
     font-weight: 500;
     line-height: 150%;
     color: #454545;
     text-decoration: none;
 }
-.footer-links h3{
+
+.footer-links h3 {
     color: black;
 }
 
-.footer-info{
-display: flex;
-justify-content: space-between;
-flex-direction: column;
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .social-media{
