@@ -5,6 +5,7 @@
 }
 
 #burger-menu{
+    margin-top: 0px;
     display: flex;
     flex-direction: column;
     align-items: start;
