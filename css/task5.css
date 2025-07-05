@@ -1,0 +1,44 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+#burger-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: fixed;
+    background: rgb(244, 208, 214);
+    top: 0px;
+    padding-top: 40px;
+    box-shadow: 0px 0px 10px black;
+    height: 100%;
+    width: 200px;
+    transition: 1s;
+    
+}
+
+.btn{
+    background: pink;
+    color: rgb(119, 6, 6);
+    font-size: 20px;
+    border-style:double;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    align-items: start;
+}
+
+#burger-menu a{
+    text-decoration: none;
+    color: rgb(119, 6, 6);
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+#btn-close{
+    position: absolute;
+    bottom: 0px;
+
+}
